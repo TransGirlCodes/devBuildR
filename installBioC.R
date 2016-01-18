@@ -1,7 +1,8 @@
-
-remove.packages("BiocInstaller")
+if("BiocInstaller" %in% installed.packages()){
+    remove.packages("BiocInstaller")
+}
 source("https://bioconductor.org/biocLite.R")
 BiocInstaller::biocValid()
-BiocInstaller::useDevel()
+try(BiocInstaller::useDevel())
 BiocInstaller::biocValid()
 biocLite()

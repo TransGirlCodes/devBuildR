@@ -26,3 +26,9 @@ export R_LIBS=$RDEVEL/library
 ~/R-devel/bin/R "\$@"
 EOF
 chmod a+x ~/run_r_devel.sh
+
+bash ~/run_r_devel.sh installBioC.R
+
+echo "R-devel and dev bioconductor installed.\n"
+echo "For convinience, add the following to your .bashrc or equivalent.\n"
+echo "alias Rdev='sh ~/run_r_devel.sh'"

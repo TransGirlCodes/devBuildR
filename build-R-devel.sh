@@ -3,7 +3,7 @@
 # A script to build and/or update an install R-devel in your home directory.
 
 # Set directories
-RSOURCES=~/src
+RSOURCES=~/R-src
 RDEVEL=~/R-devel
 
 # Get sources
